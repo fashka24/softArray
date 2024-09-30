@@ -1,9 +1,11 @@
 #include "softArray.hpp"
+using namespace soft;
 
 int main() {
-	soft::softArray<int> a_v = soft::softArray<int>(10);
-	a_v.add(15); a_v.add(16);
+  softArray<int> my_array = softArray(10); // 10 - size
+  my_array.add(10);
 
-	a_v.print();
-	return 0;
+  my_array.print();
+
+  return 0;
 }
